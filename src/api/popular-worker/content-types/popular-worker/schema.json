@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popular_workers",
+  "info": {
+    "singularName": "popular-worker",
+    "pluralName": "popular-workers",
+    "displayName": "PopularWorker"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "worker": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::worker.worker"
+    }
+  }
+}

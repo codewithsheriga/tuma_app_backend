@@ -20,9 +20,6 @@
       "type": "email",
       "required": true
     },
-    "age": {
-      "type": "date"
-    },
     "image": {
       "type": "media",
       "multiple": false,

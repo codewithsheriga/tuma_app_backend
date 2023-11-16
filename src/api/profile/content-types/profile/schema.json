@@ -4,7 +4,8 @@
   "info": {
     "singularName": "profile",
     "pluralName": "profiles",
-    "displayName": "Profile"
+    "displayName": "Profile",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,17 +24,22 @@
       "type": "date"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "profile"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
     }
   }
 }

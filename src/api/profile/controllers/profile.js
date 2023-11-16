@@ -20,6 +20,7 @@ module.exports = createCoreController('api::profile.profile', ({Strapi}) => ({
                     age: ctx.request.body.age,
                     email: user.email,
                     image: ctx.request.body.image,
+                    phoneNumber: ctx.request.body.phoneNumber,
                     user: user.id
                 }
             });

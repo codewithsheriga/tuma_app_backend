@@ -823,6 +823,7 @@ export interface ApiProfileProfile extends Schema.CollectionType {
     singularName: 'profile';
     pluralName: 'profiles';
     displayName: 'Profile';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -837,6 +838,7 @@ export interface ApiProfileProfile extends Schema.CollectionType {
       'oneToOne',
       'plugin::users-permissions.user'
     >;
+    phoneNumber: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

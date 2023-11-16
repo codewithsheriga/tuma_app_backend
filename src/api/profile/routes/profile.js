@@ -20,6 +20,7 @@ module.exports = createCoreRouter('api::profile.profile', ({Strapi})=> ({
                     email: user.email,
                     image: ctx.request.body.image,
                     age: ctx.request.body.age,
+                    phoneNumber: ctx.request.body.phoneNumber,
                     user: user.id
                 }
             });

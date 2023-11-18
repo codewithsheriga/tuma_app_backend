@@ -831,7 +831,6 @@ export interface ApiProfileProfile extends Schema.CollectionType {
   attributes: {
     fullName: Attribute.String & Attribute.Required;
     email: Attribute.Email & Attribute.Required;
-    image: Attribute.Media;
     user: Attribute.Relation<
       'api::profile.profile',
       'oneToOne',

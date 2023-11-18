@@ -20,14 +20,6 @@
       "type": "email",
       "required": true
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "user": {
       "type": "relation",
       "relation": "oneToOne",
